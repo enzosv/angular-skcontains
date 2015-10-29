@@ -4,12 +4,14 @@ Angular filter for easy JSON Array filtering
 View [live demo](http://enzosv.github.io/angular-stringcontains/)
 
 ## Installation
-
+### Bower
 To install using [Bower](http://bower.io):
 
 ```shell
 bower install angular-stringcontains
 ```
+### Manual
+Download [angular-stringcontains.js](https://raw.githubusercontent.com/enzosv/angular-stringcontains/master/angular-stringcontains.js) and add to your project
 
 ## Setup
 
