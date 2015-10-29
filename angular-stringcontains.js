@@ -1,19 +1,20 @@
 "use strict";
-angular.module('angular-skcontains', [])
-	.filter('searchKeyContainsAllInString', function () {
-		return function (arrayToSearch, searchTerm) {
+angular.module('angular-stringcontains', [])
+	.filter('stringContainsAllOfString', function () {
+		return function (arrayToSearch, searchTerm, stringToCheck) {
 			return arrayToSearch.filter(function (objectToSearch) {
-				if (!objectToSearch.searchKey) {
-					console.error("object does not contain searchKey, please create it. See https://github.com/enzosv/angular-skcontains");
+				if (!objectToSearch[stringToCheck]) {
+					console.error("object does not contain the"+ stringToCheck +" property, please create it. See https://github.com/enzosv/angular-stringcontains");
 					return false;
 				}
 				if (searchTerm) {
 					var s = searchTerm.toLowerCase()
 						.split(" ");
+
 					for (var i = 0; i < s.length; i++) {
 						//immediately return false if word is not in searchKey otherwise, continue checking other words
 
-						if (objectToSearch.searchKey.indexOf(s[i]) < 0) {
+						if (objectToSearch[stringToCheck].indexOf(s[i]) < 0) {
 							return false;
 						}
 					}
@@ -22,11 +23,11 @@ angular.module('angular-skcontains', [])
 			});
 		};
 	})
-	.filter('searchKeyContainsAnyInString', function () {
-		return function (arrayToSearch, searchTerm) {
+	.filter('stringContainsAnyOfString', function () {
+		return function (arrayToSearch, searchTerm, stringToCheck) {
 			return arrayToSearch.filter(function (objectToSearch) {
-				if (!objectToSearch.searchKey) {
-					console.error("object does not contain searchKey, please create it. See https://github.com/enzosv/angular-skcontains");
+				if (!objectToSearch[stringToCheck]) {
+					console.error("object does not contain the"+ stringToCheck +" property, please create it. See https://github.com/enzosv/angular-stringcontains");
 					return false;
 				}
 				if (searchTerm) {
@@ -34,7 +35,7 @@ angular.module('angular-skcontains', [])
 						.split(" ");
 					for (var i = 0; i < s.length; i++) {
 						//immediately return true if word is not in searchKey otherwise, continue checking other words
-						if (objectToSearch.searchKey.indexOf(s[i]) > -1) {
+						if (objectToSearch[stringToCheck].indexOf(s[i]) > -1) {
 							return true;
 						}
 					}

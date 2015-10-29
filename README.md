@@ -1,15 +1,14 @@
 # String Contains Filter for Angular
+Angular filter for easy JSON Array filtering
 
-View [live demo](http://enzosv.github.io/angular-skcontains/)
-
-Angular filter for easy JSON Array searching
+View [live demo](http://enzosv.github.io/angular-stringcontains/)
 
 ## Installation
 
 To install using [Bower](http://bower.io):
 
 ```shell
-bower install angular-skcontains
+bower install angular-stringcontains
 ```
 
 ## Setup
@@ -17,13 +16,13 @@ bower install angular-skcontains
 In your document include this script:
 
 ```html
-<script src="/bower_components/angular-skcontains/angular-skcontains.js"></script>
+<script src="/bower_components/angular-stringcontains/angular-stringcontains.js"></script>
 ```
 
-In your AngularJS app, you'll need to import the `angular-skcontains` module:
+In your AngularJS app, you'll need to import the `angular-stringcontains` module:
 
 ```javascript
-angular.module('myModule', ['angular-skcontains']);
+angular.module('myModule', ['angular-stringcontains']);
 ```
 
 ## Usage
@@ -31,20 +30,21 @@ angular.module('myModule', ['angular-skcontains']);
 This module defines the filters 'searchKeyContainsAllInString' and 'searchKeyContainsAnyInString'
 
 ```html
-<any ng-repeat="object in JSONArray | searchKeyContainsAllInString:searchTerm"></any>
+<any ng-repeat="object in JSONArray | stringContainsAllOfString:searchTerm:stringToCheck"></any>
 
-<any ng-repeat="object in JSONArray | searchKeyContainsAnyInString:searchTerm"></any>
+<any ng-repeat="object in JSONArray | stringContainsAnyOfString:searchTerm:stringToCheck"></any>
 ```
 
-This filter makes use of a string property called "searchKey" which you must generate from your object like so:
+This filter makes use of a string property you define which you must often generate from your object like so:
 
 ```javascript
-object.searchKey = (object.name + " " + object.searchableProperty1 + " " + object.searchableProperty2).toLowerCase();
+object.stringToCheck = (object.name + " " + object.searchableProperty1 + " " + object.searchableProperty2).toLowerCase();
 ```
 
 ## Example
-View [live demo] (http://enzosv.github.io/angular-skcontains/)
-View [example source code](https://github.com/enzosv/angular-skcontains/tree/gh-pages)
+View [live demo] (http://enzosv.github.io/angular-stringcontains/)
+
+View [example source code](https://github.com/enzosv/angular-stringcontains/tree/gh-pages)
 ## License
 
 MIT
