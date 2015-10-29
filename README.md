@@ -45,6 +45,10 @@ object.stringToCheck = (object.name + " " + object.searchableProperty1 + " " + o
 View [live demo] (http://enzosv.github.io/angular-stringcontains/)
 
 View [example source code](https://github.com/enzosv/angular-stringcontains/tree/gh-pages)
+
+###Comparison
+![alt tag](https://raw.githubusercontent.com/enzosv/angular-stringcontains/master/comparison.png)
+
 ## License
 
 MIT
