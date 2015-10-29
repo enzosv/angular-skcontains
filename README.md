@@ -1,6 +1,6 @@
 # String Contains Filter for Angular
 
-View [example](http://enzosv.github.io/angular-skcontains/)
+View [live demo](http://enzosv.github.io/angular-skcontains/)
 
 Angular filter for easy JSON Array searching
 
@@ -8,7 +8,7 @@ Angular filter for easy JSON Array searching
 
 To install using [Bower](http://bower.io):
 
-```
+```shell
 bower install angular-skcontains
 ```
 
@@ -16,13 +16,13 @@ bower install angular-skcontains
 
 In your document include this script:
 
-```
+```html
 <script src="/bower_components/angular-skcontains/angular-skcontains.js"></script>
 ```
 
 In your AngularJS app, you'll need to import the `angular-skcontains` module:
 
-```
+```javascript
 angular.module('myModule', ['angular-skcontains']);
 ```
 
@@ -30,7 +30,7 @@ angular.module('myModule', ['angular-skcontains']);
 
 This module defines the filters 'searchKeyContainsAllInString' and 'searchKeyContainsAnyInString'
 
-```
+```html
 <any ng-repeat="object in JSONArray | searchKeyContainsAllInString:searchTerm"></any>
 
 <any ng-repeat="object in JSONArray | searchKeyContainsAnyInString:searchTerm"></any>
@@ -38,11 +38,13 @@ This module defines the filters 'searchKeyContainsAllInString' and 'searchKeyCon
 
 This filter makes use of a string property called "searchKey" which you must generate from your object like so:
 
-```
+```javascript
 object.searchKey = (object.name + " " + object.searchableProperty1 + " " + object.searchableProperty2).toLowerCase();
 ```
 
-
+## Example
+View [live demo] (http://enzosv.github.io/angular-skcontains/)
+View [example source code](https://github.com/enzosv/angular-skcontains/tree/gh-pages)
 ## License
 
 MIT
