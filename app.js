@@ -1,4 +1,4 @@
-angular.module('skcontains-example', ['angular-skcontains'])
+angular.module('stringcontains-example', ['angular-stringcontains'])
 	.controller('ExampleController', function ($http, $scope) {
 		console.log("loaded controller");
 		$scope.movies = [];
