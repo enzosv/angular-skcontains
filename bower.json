@@ -1,10 +1,10 @@
 {
-  "name": "angular-string-contains-filter",
+  "name": "angular-skcontains",
   "authors": [
     "Enzo Vergara <vergara.enzo@gmail.com>"
   ],
   "description": "Angular filter for easy JSON Array searching",
-  "main": "angular-string-contains-filter.js",
+  "main": "angular-skcontains.js",
   "moduleType": [],
   "keywords": [
     "angular",
@@ -13,7 +13,7 @@
     "string"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/enzosv/angular-string-contains-filter",
+  "homepage": "https://github.com/enzosv/angular-skcontains",
   "ignore": [
     "**/.*",
     "node_modules",

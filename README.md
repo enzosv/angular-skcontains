@@ -1,4 +1,4 @@
-# StringContains Filter for Angular
+# String Contains Filter for Angular
 
 Angular filter for easy JSON Array searching
 
@@ -7,7 +7,7 @@ Angular filter for easy JSON Array searching
 To install using [Bower](http://bower.io):
 
 ```
-bower install angular-string-contains-filter
+bower install angular-skcontains
 ```
 
 ## Setup
@@ -15,21 +15,23 @@ bower install angular-string-contains-filter
 In your document include this script:
 
 ```
-<script src="/bower_components/angular-string-contains-filter/angular-string-contains-filter.js"></script>
+<script src="/bower_components/angular-skcontains/angular-skcontains.js"></script>
 ```
 
-In your AngularJS app, you'll need to import the `angular-string-contains-filter` module:
+In your AngularJS app, you'll need to import the `angular-skcontains` module:
 
 ```
-angular.module('myModule', ['angular-string-contains-filter']);
+angular.module('myModule', ['angular-skcontains']);
 ```
 
 ## Usage
 
-This module defines the filter 'arrayContainsAllInString'
+This module defines the filters 'searchKeyContainsAllInString' and 'searchKeyContainsAnyInString'
 
 ```
-<any ng-repeat="object in JSONArray | arrayContainsAllInString:searchTerm"></any>
+<any ng-repeat="object in JSONArray | searchKeyContainsAllInString:searchTerm"></any>
+
+<any ng-repeat="object in JSONArray | searchKeyContainsAnyInString:searchTerm"></any>
 ```
 
 This filter makes use of a string property called "searchKey" which you must generate from your object like so:
@@ -37,6 +39,9 @@ This filter makes use of a string property called "searchKey" which you must gen
 ```
 object.searchKey = (object.name + " " + object.searchableProperty1 + " " + object.searchableProperty2).toLowerCase();
 ```
+
+## Example
+
 
 ## License
 
