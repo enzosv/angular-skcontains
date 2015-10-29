@@ -1,0 +1,27 @@
+{
+  "name": "angular-skcontains",
+  "authors": [
+    "Enzo Vergara <vergara.enzo@gmail.com>"
+  ],
+  "description": "Angular filter for easy JSON Array searching",
+  "main": "angular-skcontains.js",
+  "moduleType": [],
+  "keywords": [
+    "angular",
+    "filter",
+    "json",
+    "string"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/enzosv/angular-skcontains",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7"
+  }
+}
