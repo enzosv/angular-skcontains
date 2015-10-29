@@ -36,7 +36,6 @@ angular.module('stringcontains-example', ['angular-stringcontains'])
 				}
 				data.results[i].genres = gs.join(", ");
 				data.results[i].searchKey = (data.results[i].title + " " + data.results[i].release_date + " " + gs.join(" ")).toLowerCase();
-				console.log(data.results[i].searchKey);
 			}
 			$scope.movies = data.results;
 		}).error(function(error){

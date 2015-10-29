@@ -27,6 +27,7 @@
             <h4>Regular Angular Filter</h4>
             <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">ng-repeat=</span><span style="color: #BA2121">&quot;movie in movies | filter:search&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
 
+
 <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 </pre></div>
             <table class="table table-bordered">
@@ -46,7 +47,7 @@
         </div>
         <div class="col-md-4">
             <h4>All In Filter</h4>
-            <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">ng-repeat=</span><span style="color: #BA2121">&quot;movie in movies | searchKeyContainsAllInString:search&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">ng-repeat=</span><span style="color: #BA2121">&quot;movie in movies | stringContainsAllOfString:search:'searchKey'&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
 
 <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 </pre></div>
@@ -68,7 +69,7 @@
         <div class="col-md-4">
             <h4>Any In Filter</h4>
             <!-- HTML generated using hilite.me -->
-            <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">ng-repeat=</span><span style="color: #BA2121">&quot;movie in movies | searchKeyContainsAnyInString:search&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;tr</span> <span style="color: #7D9029">ng-repeat=</span><span style="color: #BA2121">&quot;movie in movies | stringContainsAnyOfString:search:'searchKey'&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
 
 <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
 </pre></div>

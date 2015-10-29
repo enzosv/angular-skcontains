@@ -4,7 +4,7 @@ angular.module('angular-stringcontains', [])
 		return function (arrayToSearch, searchTerm, stringToCheck) {
 			return arrayToSearch.filter(function (objectToSearch) {
 				if (!objectToSearch[stringToCheck]) {
-					console.error("object does not contain the"+ stringToCheck +" property, please create it. See https://github.com/enzosv/angular-stringcontains");
+					console.error("object does not contain the "+ stringToCheck +" property, please create it. See https://github.com/enzosv/angular-stringcontains");
 					return false;
 				}
 				if (searchTerm) {
@@ -27,7 +27,7 @@ angular.module('angular-stringcontains', [])
 		return function (arrayToSearch, searchTerm, stringToCheck) {
 			return arrayToSearch.filter(function (objectToSearch) {
 				if (!objectToSearch[stringToCheck]) {
-					console.error("object does not contain the"+ stringToCheck +" property, please create it. See https://github.com/enzosv/angular-stringcontains");
+					console.error("object does not contain the "+ stringToCheck +" property, please create it. See https://github.com/enzosv/angular-stringcontains");
 					return false;
 				}
 				if (searchTerm) {
