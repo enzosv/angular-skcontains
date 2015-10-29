@@ -1,6 +1,7 @@
 # String Contains Filter for Angular
 
 View [example](http://enzosv.github.io/angular-skcontains/)
+
 Angular filter for easy JSON Array searching
 
 ## Installation
