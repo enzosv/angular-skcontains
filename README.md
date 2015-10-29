@@ -1,5 +1,6 @@
 # String Contains Filter for Angular
 
+View [example](http://enzosv.github.io/angular-skcontains/)
 Angular filter for easy JSON Array searching
 
 ## Installation
@@ -39,8 +40,6 @@ This filter makes use of a string property called "searchKey" which you must gen
 ```
 object.searchKey = (object.name + " " + object.searchableProperty1 + " " + object.searchableProperty2).toLowerCase();
 ```
-
-## Example
 
 
 ## License
