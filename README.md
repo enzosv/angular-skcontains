@@ -30,9 +30,9 @@ angular.module('myModule', ['angular-stringcontains']);
 This module defines the filters 'searchKeyContainsAllInString' and 'searchKeyContainsAnyInString'
 
 ```html
-<any ng-repeat="object in JSONArray | stringContainsAllOfString:searchTerm:stringToCheck"></any>
+<any ng-repeat="object in JSONArray | stringContainsAllOfString:searchTerm:'stringToCheck'"></any>
 
-<any ng-repeat="object in JSONArray | stringContainsAnyOfString:searchTerm:stringToCheck"></any>
+<any ng-repeat="object in JSONArray | stringContainsAnyOfString:searchTerm:'stringToCheck'"></any>
 ```
 
 This filter makes use of a string property you define which you must often generate from your object like so:
