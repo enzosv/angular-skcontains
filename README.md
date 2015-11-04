@@ -11,14 +11,15 @@ To install using [Bower](http://bower.io):
 bower install angular-stringcontains
 ```
 ### Manual
-Download [angular-stringcontains.min.js](https://raw.githubusercontent.com/enzosv/angular-stringcontains/master/angular-stringcontains.min.js) and add to your project
+Download [angular-stringcontains.min.js](https://raw.githubusercontent.com/enzosv/angular-stringcontains/master/angular-stringcontains.min.js) 
+and add to your project
 
 ## Setup
 
 In your document include this script:
 
 ```html
-<script src="/bower_components/angular-stringcontains/angular-stringcontains.min.js"></script>
+<script src="/path/to/file/angular-stringcontains.min.js"></script>
 ```
 
 In your AngularJS app, you'll need to import the `angular-stringcontains` module:
@@ -46,10 +47,15 @@ object.stringToCheck = (object.name + " " + object.searchableProperty1 + " " + o
 ## Example
 View [live demo] (http://enzosv.github.io/angular-stringcontains/)
 
-View [example source code](https://raw.githubusercontent.com/enzosv/angular-stringcontains/master/example)
+View [example source code](https://github.com/enzosv/angular-stringcontains/tree/master/example)
 
 ###Comparison
 ![alt tag](https://raw.githubusercontent.com/enzosv/angular-stringcontains/master/comparison.png)
+
+We get more accurate results from the all in filter because while the regular angular filter will search for the entire term "adventure action", the all in filter will check for the inclusion of each word in the term "adventure action" thus producing results which will include both movies with "Action, Adventure" and "Adventure, Action" as their genres.
+
+## Featured Projects
+This project is used by [endo](https://github.com/enzosv/endo), an offline capable Todoist new tab extension for Chrome
 
 ## License
 
