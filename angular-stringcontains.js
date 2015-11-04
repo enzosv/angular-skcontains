@@ -1,6 +1,6 @@
 "use strict";
 angular.module('angular-stringcontains', [])
-	.filter('stringContainsAllOfString', function () {
+	.filter('stringContainsAllOf', function () {
 		return function (arrayToSearch, searchTerm, stringToCheck) {
 			return arrayToSearch.filter(function (objectToSearch) {
 				if (!objectToSearch[stringToCheck]) {
@@ -23,7 +23,7 @@ angular.module('angular-stringcontains', [])
 			});
 		};
 	})
-	.filter('stringContainsAnyOfString', function () {
+	.filter('stringContainsAnyOf', function () {
 		return function (arrayToSearch, searchTerm, stringToCheck) {
 			return arrayToSearch.filter(function (objectToSearch) {
 				if (!objectToSearch[stringToCheck]) {

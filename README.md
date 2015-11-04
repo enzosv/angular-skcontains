@@ -11,14 +11,14 @@ To install using [Bower](http://bower.io):
 bower install angular-stringcontains
 ```
 ### Manual
-Download [angular-stringcontains.js](https://raw.githubusercontent.com/enzosv/angular-stringcontains/master/angular-stringcontains.js) and add to your project
+Download [angular-stringcontains.min.js](https://raw.githubusercontent.com/enzosv/angular-stringcontains/master/angular-stringcontains.min.js) and add to your project
 
 ## Setup
 
 In your document include this script:
 
 ```html
-<script src="/bower_components/angular-stringcontains/angular-stringcontains.js"></script>
+<script src="/bower_components/angular-stringcontains/angular-stringcontains.min.js"></script>
 ```
 
 In your AngularJS app, you'll need to import the `angular-stringcontains` module:
@@ -46,7 +46,7 @@ object.stringToCheck = (object.name + " " + object.searchableProperty1 + " " + o
 ## Example
 View [live demo] (http://enzosv.github.io/angular-stringcontains/)
 
-View [example source code](https://github.com/enzosv/angular-stringcontains/tree/gh-pages)
+View [example source code](https://raw.githubusercontent.com/enzosv/angular-stringcontains/master/example)
 
 ###Comparison
 ![alt tag](https://raw.githubusercontent.com/enzosv/angular-stringcontains/master/comparison.png)
