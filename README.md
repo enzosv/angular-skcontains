@@ -55,7 +55,7 @@ View [example source code](https://github.com/enzosv/angular-stringcontains/tree
 We get more accurate results from the all in filter because while the regular angular filter will search for the entire term "adventure action", the all in filter will check for the inclusion of each word in the term "adventure action" thus producing results which will include both movies with "Action, Adventure" and "Adventure, Action" as their genres.
 
 ## Featured Projects
-This project is used by [endo](https://github.com/enzosv/endo), an offline capable Todoist new tab extension for Chrome
+This project is used by [endo](https://chrome.google.com/webstore/detail/endo/cooolpanghnclajpbeemmimmojnamnpi), a Todoist and Google Calendar new tab page also [created by me](https://github.com/enzosv/endo)
 
 ## License
 
