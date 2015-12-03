@@ -24,8 +24,8 @@
     "bower_components",
     "test",
     "tests",
-    "comparison.png"
-    "example"
+    "comparison.png",
+    "example",
     "gulpfile.js"
   ],
   "dependencies": {
