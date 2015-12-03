@@ -33,15 +33,15 @@ angular.module('myModule', ['angular-stringcontains']);
 This module defines the filters 'searchKeyContainsAllOf' and 'searchKeyContainsAnyOf'
 
 ```html
-<any ng-repeat="object in JSONArray | stringContainsAllOf:searchTerm:'stringToCheck'"></any>
+<any ng-repeat="object in JSONArray | stringContainsAllOf:searchTerm:'propertyStringToCheck'"></any>
 
-<any ng-repeat="object in JSONArray | stringContainsAnyOfsearchTerm:'stringToCheck'"></any>
+<any ng-repeat="object in JSONArray | stringContainsAnyOf:searchTerm:'propertyStringToCheck'"></any>
 ```
 
 This filter makes use of a string property you define which you must often generate from your object like so:
 
 ```javascript
-object.stringToCheck = (object.name + " " + object.searchableProperty1 + " " + object.searchableProperty2).toLowerCase();
+object.propertyStringToCheck = (object.name + " " + object.searchableProperty1 + " " + object.searchableProperty2).toLowerCase();
 ```
 
 ## Example
@@ -55,7 +55,7 @@ View [example source code](https://github.com/enzosv/angular-stringcontains/tree
 We get more accurate results from the all in filter because while the regular angular filter will search for the entire term "adventure action", the all in filter will check for the inclusion of each word in the term "adventure action" thus producing results which will include both movies with "Action, Adventure" and "Adventure, Action" as their genres.
 
 ## Featured Projects
-This project is used by [endo](https://chrome.google.com/webstore/detail/endo/cooolpanghnclajpbeemmimmojnamnpi), a Todoist and Google Calendar new tab page also [created by me](https://github.com/enzosv/endo)
+This project is used by [endo](https://chrome.google.com/webstore/detail/endo/cooolpanghnclajpbeemmimmojnamnpi), a Todoist and Google Calendar new tab page and [encal](https://chrome.google.com/webstore/detail/encal/doobfeeanogdhibkaccghpmdpkpeokif), a simpler and cleaner Google Calendar new tab page.
 
 ## License
 

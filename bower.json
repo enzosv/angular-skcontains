@@ -1,5 +1,6 @@
 {
   "name": "angular-stringcontains",
+  "version": "0.0.0.2",
   "authors": [
     "Enzo Vergara <vergara.enzo@gmail.com>"
   ],
@@ -19,7 +20,10 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "comparison.png"
+    "example"
+    "gulpfile.js"
   ],
   "dependencies": {
     "angular": "~1.4.7"

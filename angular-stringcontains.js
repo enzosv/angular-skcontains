@@ -2,25 +2,22 @@
 	"use strict";
 	angular.module('angular-stringcontains', [])
 		.factory('searchKeyGenerator', function () {
-			var service = {
-				generateSearchKey: generateSearchKey
-			};
-			return service;
-			
-			function generateSearchKey(object, propertiesArray) {
-				var searchKey = "";
-				for (var i = 0; i < propertiesArray.length; i++) {
-					var value = object[propertiesArray[i]];
-					if (value) {
-						if (typeof value === 'string') {
-							searchKey += value + " ";
-						} else if (Object.prototype.toString.call(value) === '[object Array]') {
-							searchKey += value.join(" ") + " ";
+			return {
+				generateSearchKey: function generateSearchKey(object, propertiesArray) {
+					var searchKey = "";
+					for (var i = 0; i < propertiesArray.length; i++) {
+						var value = object[propertiesArray[i]];
+						if (value) {
+							if (typeof value === 'string') {
+								searchKey += value + " ";
+							} else if (Object.prototype.toString.call(value) === '[object Array]') {
+								searchKey += value.join(" ") + " ";
+							}
 						}
 					}
+					return searchKey.toLowerCase();
 				}
-				return searchKey.toLowerCase();
-			}
+			};
 		})
 		.filter('stringContainsAllOf', function () {
 			return function (arrayToSearch, searchTerm, stringToCheck) {
@@ -29,7 +26,7 @@
 				}
 				return arrayToSearch.filter(function (objectToSearch) {
 					if (!objectToSearch[stringToCheck]) {
-						console.error("object does not contain the" + stringToCheck + " property, please create it. See https://github.com/enzosv/angular-stringcontains");
+						console.error("object does not contain the " + stringToCheck + " property, please create it. See https://github.com/enzosv/angular-stringcontains");
 						return false;
 					}
 					if (searchTerm) {
@@ -55,7 +52,7 @@
 				}
 				return arrayToSearch.filter(function (objectToSearch) {
 					if (!objectToSearch[stringToCheck]) {
-						console.error("object does not contain the" + stringToCheck + " property, please create it. See https://github.com/enzosv/angular-stringcontains");
+						console.error("object does not contain the " + stringToCheck + " property, please create it. See https://github.com/enzosv/angular-stringcontains");
 						return false;
 					}
 					if (searchTerm) {
