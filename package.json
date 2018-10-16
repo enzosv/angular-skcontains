@@ -1,0 +1,34 @@
+{
+  "name": "angular-stringcontains",
+  "version": "0.0.1",
+  "description": "Angular filter for easy JSON Array filtering",
+  "main": "angular-stringcontains.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enzosv/angular-stringcontains.git"
+  },
+  "keywords": [
+    "angular",
+    "filter",
+    "json",
+    "string",
+    "contains",
+    "search",
+    "fuzzy"
+  ],
+  "author": "Enzo Vergara <vergara.enzo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enzosv/angular-stringcontains/issues"
+  },
+  "homepage": "https://github.com/enzosv/angular-stringcontains#readme",
+  "dependencies": {
+    "angular": "^1.4.7"
+  }
+}

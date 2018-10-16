@@ -1,0 +1,8 @@
+bower_components/
+.DS_STORE
+node_modules/
+.publish/
+.sublime-gulp.cache
+comparison.png
+example/
+gulpfile.js
